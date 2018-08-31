@@ -1,0 +1,9 @@
+podTemplate(label: 'jenkins-slave', cloud: 'kubernetes')
+{
+    node ('jenkins-slave') {
+        stage('test') {
+            echo "hello, world"
+            sleep 60
+        }
+    }
+}
